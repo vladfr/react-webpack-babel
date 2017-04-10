@@ -1,0 +1,63 @@
+.card {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: flex;
+
+  color: #fff;
+
+  width: 300px;
+
+  background-position: 45px -100px;
+  background-size: 118% auto;
+  background-repeat: no-repeat;
+
+
+  margin: 2px 0;
+
+  span {
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  span:first-child {
+    text-align: center;
+    width: 20px;
+    background: #2E5490;
+    text-align: center;
+  }
+
+  span:nth-child(2) {
+    flex-grow:5;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(left, #000 50%, rgba(0,0,0,0) 75%);
+  }
+
+  span:nth-child(3) {
+    text-align: center;
+    width: 20px;
+    background: black;
+  }
+
+  img {
+    display: none;
+    position: absolute;
+    left: 30px;
+  }
+
+  &:hover {
+    img {
+      display: block;
+    }
+  }
+}
